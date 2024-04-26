@@ -297,6 +297,308 @@ Contoh penggunaan grid adalah seperti i bawah ini
 ```
 ![grid](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/a48ed783-61df-43bb-8875-7e3504b1f8dd)
 
+## CSS
+CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs. Perbedaan antara html dan CSS adalah HTML digunakan untuk menambahkan struktur dan terutama konten pada halaman web atau aplikasi web. CSS digunakan untuk menambahkan gaya atau pemformatan pada konten halaman web.
+CSS dapat membuat tampilan website enak untuk dipandang dan lebih menarik karena CSS dapat memberikan banyak pewarnaan dan juga variasi tampilan.
+
+### Margin CSS
+Properti margin CSS digunakan untuk membuat ruang di sekitar elemen, di luar batas yang ditentukan. Terdapat properti untuk mengatur margin untuk setiap sisi elemen (atas, kanan, bawah, dan kiri). Berikut ini adalah contoh dari penerapan margin CSS.
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>Ini adalah heading</h1>
+
+<p>Ini adalah paragraf.</p>
+<p>Ini adalah paragraf.</p>
+<p>Ini adalah paragraf.</p>
+
+</body>
+</html>
+```
+![image](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/079c249f-9049-4616-8f12-9d54b8a2d18e)
+
+### Opacity
+Properti ini opacitymenetapkan tingkat opacity untuk suatu elemen. Tingkat opacity menggambarkan tingkat transparansi, dimana 1 tidak transparan sama sekali, 0,5 adalah 50% tembus pandang, dan 0 benar-benar transparan.  Saat menggunakan opacityproperti untuk menambahkan transparansi pada latar belakang suatu elemen, semua elemen turunannya juga menjadi transparan. Hal ini dapat membuat teks di dalam elemen transparan sepenuhnya sulit dibaca. Jika Anda tidak ingin menerapkan opacity ke elemen turunan, gunakan nilai warna RGBA
+Contoh dari penggunaan opacity terdapat pada gambar di bawah ini.
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>Ini adalah opacity</p>
+  </div>
+</div>
+
+</body>
+</html>
+```
+![opacity](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/c78f00db-3856-4959-aa44-240e61677ffa)
+
+### Warna outline css
+Properti outline-colorCSS berfungsi mengatur warna garis luar elemen.
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+</style>
+</head>
+<body>
+
+<h2>Properti outline color</h2>
+<p>Ini adalah contoh pengguunaan properti outline color</p>
+
+<p class="ex1">Ini adalah outline warna merah.</p>
+<p class="ex2">Ini adalah outline garis denga model titik-titik.</p>
+<p class="ex3">Ini adalah outline dengan garis berwarna abu-abu.</p>
+
+</body>
+</html>
+```
+![outline color](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/888d6b50-175b-4419-8309-1e1d8001a6d3)
+
+### Color Font Size
+Dengan menggunakan CSS kita dapat mengatur warna font dan juga ukuran dari tulusan atau teks. contohnya adalah umtuk mengatur ukuran huruf dan warna pada paragraf ataupun heading. Contoh penggunaan color font size adalah sebagai berikut.
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>warna heading</h1>
+<p>warna paragraf.</p>
+
+</body>
+</html>
+```
+![warna, ukuran](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/f1a916b2-7b19-4246-afe9-303938802e0e)
+
+### Tabel CSS
+Tabel dalam CSS digunakan untuk menerapkan berbagai properti gaya pada elemen Tabel HTML untuk menyusun data dalam baris dan kolom, atau mungkin dalam struktur yang lebih kompleks dengan cara yang terorganisir dengan baik . Tabel banyak digunakan dalam komunikasi, penelitian, dan analisis data.
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>A Fancy Table</h1>
+
+<table id="customers">
+  <tr>
+    <th>Nama</th>
+    <th>Kelas</th>
+    <th>No absen</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+![tabel css](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/f1f3d9c6-e44c-48f7-be19-c2bfdceef00a)
+
+## Java Script
+JavaScript merupakan bahasa pemrograman populer yang digunakan untuk membuat website interaktif dan dinamis. Adapun dinamis yang dimaksud di sini berarti konten di dalamnya dapat bergerak dan tampil secara otomatis tanpa harus dimuat ulang manual oleh pengguna.
+
+### Pengenalan Java Script
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content. Let's try it by clicking the button below.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Here!</button>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo2">JavaScript can change the style of an HTML element. JavaScript accept both double and single quotes</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+</body>
+</html>
+```
+![js](https://github.com/AuliaFitriNurAzizah/pweb1/assets/167959436/ce67e212-f47a-475a-8f8d-3083634b2b0c)
+Salah satu dari banyak metode JavaScript HTML adalah getElementById().
+
+Penerapan tersebut dapat "menemukan" elemen HTML (dengan id="demo"), dan mengubah konten elemen (innerHTML) menjadi "Halo JavaScript":
+dapat jugaMengubah gaya elemen HTML, merupakan varian dari mengubah atribut HTML. Dalam contoh tersebut, JavaScript mengubah nilai srcatribut (sumber) dari sebuah < img >tag dan juga dapat menyembunyikan elemen HTML dapat dilakukan dengan mengubah displaygaya
+
+
+
+
 
 
 
